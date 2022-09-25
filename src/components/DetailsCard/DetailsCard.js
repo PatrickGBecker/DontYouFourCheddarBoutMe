@@ -22,12 +22,12 @@ const DetailsCard = ({ characters, addFavoriteCharacter, id }) => {
         </div>
       </div>
       <div className='goback-fav'>
-        <Link to ='/'>
+        <Link to ='/DontYouFourCheddarBoutMe/'>
 
-          <button className="go-back"> GO BACK </button>
+          <button className="go-back">GO BACK</button>
         </Link>
         <Link to ='/favorites'>
-          <button className='add-favorite' onClick={() => addFavoriteCharacter(singleCharacter)}>  ADD FAVORITES  </button>
+          <button className='add-favorite' onClick={() => addFavoriteCharacter(singleCharacter)}>ADD FAVORITES</button>
         </Link>
       </div>
     </>

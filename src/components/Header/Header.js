@@ -9,7 +9,7 @@ const Header = () => {
           <button className='favorites'>Favorites</button>
       </Link>
       <header className='header'>
-        <Link to='/'>
+        <Link to='/DontYouFourCheddarBoutMe/'>
           <h1>Don't You Four Cheddar 'Bout Me!</h1>
         </Link>
         
