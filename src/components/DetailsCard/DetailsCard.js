@@ -23,7 +23,6 @@ const DetailsCard = ({ characters, addFavoriteCharacter, id }) => {
       </div>
       <div className='goback-fav'>
         <Link to ='/DontYouFourCheddarBoutMe/'>
-
           <button className="go-back">GO BACK</button>
         </Link>
         <Link to ='/favorites'>

@@ -26,9 +26,9 @@ const Favorites = ({ favoriteCharacters, removeFavorite }) => {
   return (
     <>
       {formatCharacters}
-      <Link to ='/DontYouFourCheddarBoutMe/'>
-        <button className='go-back-bttn'>GO BACK</button>
-      </Link>
+       <Link to ='/DontYouFourCheddarBoutMe/'>
+          <button className="go-back">GO BACK</button>
+        </Link>
     </>
   )
 }
