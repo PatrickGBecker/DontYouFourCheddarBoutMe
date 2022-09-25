@@ -24,14 +24,9 @@ const Characters = ( { characters }) => {
     );
   });
   return (
-  <>
     <section className='characters'>
       {charactersCard}
     </section>
-    <Link to='/favorites'>
-      <button className='favorites' >Favorites</button>
-    </Link>
-  </>
   )
 }
 
