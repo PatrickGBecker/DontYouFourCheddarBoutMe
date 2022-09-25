@@ -1,6 +1,6 @@
 import React from "react";
 import './DetailsCard.css';
-import { Link } from "react-router-dom";
+import { Route, Link, NavLink } from "react-router-dom";
 import PropTypes from 'prop-types';
 
 const DetailsCard = ({ characters, addFavoriteCharacter, id }) => {
@@ -18,7 +18,7 @@ const DetailsCard = ({ characters, addFavoriteCharacter, id }) => {
           <p className='details'>Occupation: {singleCharacter.occupation}</p>
           <p className='details'>First episode: {singleCharacter.firstEpisode}</p>
           <p className='details'>This character is voiced by {singleCharacter.voicedBy}.</p>
-         <p className='details'>Find out even more!{singleCharacter.wikiUrl}</p>
+         <a target="wiki-link" className='wiki-link' href={`${singleCharacter.wikiUrl}`}>Find Out More!</a>
         </div>
       </div>
       <div className='goback-fav'>
@@ -28,9 +28,6 @@ const DetailsCard = ({ characters, addFavoriteCharacter, id }) => {
         </Link>
         <Link to ='/favorites'>
           <button className='add-favorite' onClick={() => addFavoriteCharacter(singleCharacter)}>  ADD FAVORITES  </button>
-        </Link>
-        <Link to='/favorites'>
-          <button className='favorites' >Favorites</button>
         </Link>
       </div>
     </>
