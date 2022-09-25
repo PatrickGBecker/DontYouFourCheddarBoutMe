@@ -16,7 +16,7 @@ const Favorites = ({ favoriteCharacters, removeFavorite }) => {
           <p className='details'>Hair Color: {favoriteCharacter.hairColor}</p>
           <p className='details'>Occupation: {favoriteCharacter.occupation}</p>
           <p className='details'>First episode: {favoriteCharacter.firstEpisode}</p>
-          <p className='details'>This character is voiced by {favoriteCharacter.interpretedBy}</p>
+          <p className='details'>This character is voiced by {favoriteCharacter.voicedBy}</p>
          <p className='details'>Find out even more! {`${favoriteCharacter.wikiUrl}`}</p>
         </div>
           <button className="trash-btn" onClick={() => removeFavorite(favoriteCharacter.id)}>🗑</button>
