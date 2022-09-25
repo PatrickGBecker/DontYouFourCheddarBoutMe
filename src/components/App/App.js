@@ -25,11 +25,33 @@ const App = () => {
     })
   }, [])
 
+  const addFavoriteCharacter = (character) => {
+    setFavoriteCharacters([ ...favoriteCharacters, character ])
+  }
+
+  const removeFavorite = (id) => {
+    return setFavoriteCharacters(favoriteCharacters.filter(favorite => id !== favorite.id))
+  }
 
   return (
-        <div>
-
-        </div>
+    <div>
+      <Header />
+      <main className='app'>
+        <Switch>
+          <Route exact path='/'>
+            <Characters characters={characters}/>
+          </Route>
+          {characters.length && <Route exact path={'/details/:id'} render={( {match} ) => {
+            return <DetailsCard characters={characters} addFavoriteCharacter={addFavoriteCharacter} id={match.params.id}/>}}/>}
+          <Route exact path='/favorites'>
+            {!favoriteCharacters.length ? <h2> 506 characters and you don't like a single one?! Keep readin' buddy! </h2>: 
+              <Favorites favoriteCharacters={favoriteCharacters} removeFavorite={removeFavorite}/>}
+          </Route>
+          <Route
+            path='/*' render={()=> <Error />}/>
+        </Switch>
+      </main>
+    </div>
   )
 }
 
