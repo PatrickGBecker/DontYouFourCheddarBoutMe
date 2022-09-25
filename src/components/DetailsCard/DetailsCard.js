@@ -11,7 +11,7 @@ const DetailsCard = ({ characters, addFavoriteCharacter, id }) => {
       <div className='details-card'>
         <img className='character-poster' src={singleCharacter.image} alt={`${singleCharacter.name} information`}/>
         <div className="info-container">
-          <p className='details'>{singleCharacter.character}</p>
+          <p className='details'>Name: {singleCharacter.name}</p>
           <p className='details'>Age: {singleCharacter.age}</p>
           <p className='details'>Gender: {singleCharacter.gender}</p>
           <p className='details'>Hair Color: {singleCharacter.hairColor}</p>

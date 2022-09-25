@@ -1,0 +1,42 @@
+[
+  {
+"id": 446,
+"name": "Shelby Schnabel",
+"image": "https://bobsburgers-api.herokuapp.com/images/characters/446.jpg",
+"age": "60-70s",
+"gender": "Female",
+"hairColor": "Gray",
+"occupation": "Sharpshooter",
+"firstEpisode": "\"An Indecent Thanksgiving Proposal\"",
+"voicedBy": "Lindsey Stoddart",
+"url": "https://bobsburgers-api.herokuapp.com/characters/446",
+"wikiUrl": "https://bobs-burgers.fandom.com/wiki/Shelby_Schnabel",
+"relatives": []
+},
+{
+"id": 447,
+"name": "Sheldon Felds",
+"image": "https://bobsburgers-api.herokuapp.com/images/characters/447.jpg",
+"gender": "Male",
+"hairColor": "Brown",
+"occupation": "Employee at The Hobby Hole (former)",
+"firstEpisode": "\"Li'l Hard Dad\"",
+"voicedBy": "Dana Snyder",
+"url": "https://bobsburgers-api.herokuapp.com/characters/447",
+"wikiUrl": "https://bobs-burgers.fandom.com/wiki/Sheldon_Felds",
+"relatives": []
+},
+{
+"id": 448,
+"name": "Skip Marooch",
+"image": "https://bobsburgers-api.herokuapp.com/images/characters/448.jpg",
+"gender": "Male",
+"hairColor": "Black",
+"occupation": "Restauranteur/Author",
+"firstEpisode": "\"Best Burger\"",
+"voicedBy": "Kumail Nanjiani",
+"url": "https://bobsburgers-api.herokuapp.com/characters/448",
+"wikiUrl": "https://bobs-burgers.fandom.com/wiki/Skip_Marooch",
+"relatives": []
+}
+]

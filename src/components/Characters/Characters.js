@@ -11,7 +11,7 @@ const Characters = ( { characters }) => {
       <CharactersCard 
       id={character.id}
       key={character.id}
-      name={character.character}
+      name={character.name}
       imageUrl={character.image}
       age={character.age}
       gender={character.gender}

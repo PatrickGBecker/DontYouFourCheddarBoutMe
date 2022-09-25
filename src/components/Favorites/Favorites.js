@@ -10,7 +10,7 @@ const Favorites = ({ favoriteCharacters, removeFavorite }) => {
       <div className='favorite-container' key={favoriteCharacter.id}>
         <img className='character-poster' src={favoriteCharacter.image} alt={`${favoriteCharacter.name} information`}/>
         <div className="info-container">
-          <p className='details'>{favoriteCharacter.character}</p>
+          <p className='details'>Name: {favoriteCharacter.name}</p>
           <p className='details'>Age: {favoriteCharacter.age}</p>
           <p className='details'>Gender: {favoriteCharacter.gender}</p>
           <p className='details'>Hair Color: {favoriteCharacter.hairColor}</p>
