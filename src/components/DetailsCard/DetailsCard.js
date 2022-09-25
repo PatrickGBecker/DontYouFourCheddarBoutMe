@@ -17,17 +17,17 @@ const DetailsCard = ({ characters, addFavoriteCharacter, id }) => {
           <p className='details'>Hair Color: {singleCharacter.hairColor}</p>
           <p className='details'>Occupation: {singleCharacter.occupation}</p>
           <p className='details'>First episode: {singleCharacter.firstEpisode}</p>
-          <p className='details'>This character is voiced by {singleCharacter.interpretedBy}.</p>
+          <p className='details'>This character is voiced by {singleCharacter.voicedBy}.</p>
          <p className='details'>Find out even more!{singleCharacter.wikiUrl}</p>
         </div>
       </div>
       <div className='goback-fav'>
         <Link to ='/'>
 
-          <button className="go-back">🪄 GO BACK 🪄</button>
+          <button className="go-back"> GO BACK </button>
         </Link>
         <Link to ='/favorites'>
-          <button className='add-favorite' onClick={() => addFavoriteCharacter(singleCharacter)}> 🪄 ADD FAVORITES 🪄 </button>
+          <button className='add-favorite' onClick={() => addFavoriteCharacter(singleCharacter)}>  ADD FAVORITES  </button>
         </Link>
         <Link to='/favorites'>
           <button className='favorites' >Favorites</button>
