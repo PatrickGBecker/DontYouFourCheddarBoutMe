@@ -38,7 +38,7 @@ const App = () => {
       <Header />
       <main className='app'>
         <Switch>
-          <Route exact path='/'>
+          <Route exact path='/DontYouFourCheddarBoutMe/'>
             <Characters characters={characters}/>
           </Route>
           {characters.length && <Route exact path={'/details/:id'} render={( {match} ) => {
